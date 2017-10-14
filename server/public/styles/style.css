@@ -1,4 +1,66 @@
+.calculator {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.calculator1, .calculator2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 .buttonDiv {
     width: 40px;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+}
+
+.numberOneButtons, .numberTwoButtons {
+    width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+
+}
+
+.numberButton {
+    width: 50px;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: rgba(133, 196, 186, 0.95)
+}
+
+.operatorButton {
+    width: 50px;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: rgba(136, 42, 244, 0.95);
+
+}
+
+.equalsButton {
+    width: 50px;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: rgba(244, 136, 42, 0.95);
+
+}
+.numberButton:hover, .operatorButton:hover, .equalsButton:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.numberButton:active {
+    background-color: rgba(64, 157, 144, 0.95);
+    border: none;
+}
+
+.operatorButton:active {
+    background-color:rgba(113, 14, 235, 0.95);
+    border: none;
+}
+
+p {
+   font-family: Arial;
 }

@@ -10,6 +10,10 @@
 - [x] Append calculation to DOM
 - [] Build clear button to reset the page
 
-##Hard mode
-- []
-- []
+##Hard mode, still to do:
+- [] Find a way to append the text of the buttons clicked to the <p> tag above it
+    - [] Specifically, append so that the numbers are concatenated into one new number
+- [] Append the operator to the <p> tag above it
+- [] Change the object I'm sending to the server so that the number variables are now the value in the <p> tag, instead of the input field values
+- [] Change the clear button so that the result field is empty
+

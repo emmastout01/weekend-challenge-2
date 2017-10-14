@@ -8,7 +8,7 @@ function onReady() {
     $('#subtractButton').on('click', changeType);
     $('#multiplyButton').on('click', changeType);
     $('#divideButton').on('click', changeType);
-    $('#calculateButton').on('click', calculateNumbers);
+    $('#equalsButton').on('click', calculateNumbers);
     $('#clearButton').on('click', resetCalculator)
 }
 

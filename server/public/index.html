@@ -12,20 +12,68 @@
 <body>
     <h1>Let's calculate numbers!</h1>
     <div class="main">
-        <input type="number" id="numberOne">
-        <div class="buttonDiv">
-            <button type="button" id="addButton" data-type="add">+</button>
-            <button type="button" id="subtractButton" data-type="subtract">-</button>
-            <button type="button" id="multiplyButton" data-type="multiply">*</button>
-            <button type="button" id="divideButton" data-type="divide">/</button>
-        </div>
-        <input type="number" id="numberTwo">
+       <!-- <input type="number" id="numberOne"> -->
+        <div class="calculator">
+            <div class="calculator1">
+                <div class="numberInput">
+                    <p id="numberOneInput">test input</p>
+                </div>
+                <div class="numberOneButtons">
+                    <button class="numberButton" id="first1">1</button>
+                    <button class="numberButton" id="first2">2</button>
+                    <button class="numberButton" id="first3">3</button>
+                    <button class="numberButton" id="first4">4</button>
+                    <button class="numberButton" id="first5">5</button>
+                    <button class="numberButton" id="first6">6</button>
+                    <button class="numberButton" id="first7">7</button>
+                    <button class="numberButton" id="first8">8</button>
+                    <button class="numberButton" id="first9">9</button>
+                    <button class="numberButton" id="first0">0</button>
+                </div>
+            </div>
+            <div class="buttonDiv">
+                <div class="numberInput">
+                    <p id="operatorInput">test operator</p>
+                </div>
+                <div class="operators">
+                    <button class="operatorButton" id="addButton" data-type="add">+</button>
+                    <button class="operatorButton" id="subtractButton" data-type="subtract">-</button>
+                    <button class="operatorButton" id="multiplyButton" data-type="multiply">*</button>
+                    <button class="operatorButton" id="divideButton" data-type="divide">/</button>
+                </div>
+            </div>
+            <div class="calculator2">
+                <div class="numberInput">
+                    <p id="numberOneInput">test input</p>
+                </div>
+                <div class="numberTwoButtons">
+                    <button class="numberButton" id="second1">1</button>                        
+                    <button class="numberButton" id="second2">2</button>
+                    <button class="numberButton" id="second3">3</buton>
+                    <button class="numberButton" id="second4">4</button>
+                    <button class="numberButton" id="second5">5</button>
+                    <button class="numberButton" id="second6">6</button>
+                    <button class="numberButton" id="second7">7</button>
+                     <button class="numberButton" id="second8">8</button>
+                    <button class="numberButton" id="second9">9</button>
+                    <button class="numberButton" id="second0">0</button>
+                 </div>
+             </div>
+             <div >
+                 <button class="equalsButton">=</button>
+             </div>
+             <div>
+                 <p id="result"></p>
+             </div>
+
+    </div>
+    <!--  <input type="number" id="numberTwo"> -->
         <br>
         <br>
         <div>
-            <button type="button" id="calculateButton">Calculate!</button>
+            <!-- <button type="button" id="calculateButton">Calculate!</button> -->
             <button id="clearButton">Reset!</button>
-            <p>Result: <span id="result"></span></p><br>
+            
         </div>
     </div>
 </body>
