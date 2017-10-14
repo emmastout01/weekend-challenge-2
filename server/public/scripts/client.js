@@ -41,5 +41,8 @@ function calculateNumbers() {
 }
 
 function resetCalculator() {
-    
+    $('#numberOne').val('');
+    $('#numberTwo').val('');
+    $('#numberOne').focus();
+
 }
