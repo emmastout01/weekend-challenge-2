@@ -1,5 +1,4 @@
 function logic(numberOne, numberTwo, operator) {
-    console.log('in logic')
     if (operator === 'add') {
         return numberOne + numberTwo;
     } else if (operator === 'subtract') {

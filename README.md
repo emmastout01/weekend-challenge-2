@@ -7,7 +7,7 @@
 - [x] Send object to server with POST 
 - [x]Build server logic to compute numbers
 - [x] Send calculation back to client 
-- [] Append calculation to DOM
+- [x] Append calculation to DOM
 - [] Build clear button to reset the page
 
 ##Hard mode

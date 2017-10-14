@@ -8,7 +8,6 @@ app.use(express.static('server/public'));
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.post('/calculate', function(req,res){
-    console.log('logging data', req.body);
     var numberOne = parseInt(req.body.numberOne);
     var numberTwo = parseInt(req.body.numberTwo);
     var operator = req.body.type;
