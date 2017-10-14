@@ -40,9 +40,10 @@ function calculateNumbers() {
     });
 }
 
+//Clear button; resets inputs and result to empty
 function resetCalculator() {
     $('#numberOne').val('');
     $('#numberTwo').val('');
     $('#numberOne').focus();
-
+    $('#result').text('');
 }
