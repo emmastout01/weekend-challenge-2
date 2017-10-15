@@ -22,6 +22,6 @@
 - [x] Add background color
 
 ## Pro Mode, still to do:
-- [] Append everything to DOM in a list
-- [] Add stying to the list
+- [x] Append everything to DOM in a list
+- [x] Add stying to the list
 
