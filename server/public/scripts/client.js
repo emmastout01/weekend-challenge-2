@@ -8,7 +8,7 @@ function onReady() {
     $('.numberButtonOne').on('click', changeNumberOne);
     $('.numberButtonTwo').on('click', changeNumberTwo);
     $('.equalsButton').on('click', calculateNumbers);
-    //$('#clearButton').on('click', resetCalculator)
+    $('#clearButton').on('click', resetCalculator)
 }
 
 var type = 'testType';
@@ -58,13 +58,13 @@ function calculateNumbers() {
         console.log('Error', status)
     });
     //Clear fields
+    
+}
+
+//Clear button; resets inputs and result to empty
+ function resetCalculator() {
     $('#numberOneInput').text('');
     $('#operatorInput').text('');
     $('#numberTwoInput').text('');
     $('#result').text('');
-}
-
-//Clear button; resets inputs and result to empty
-// function resetCalculator() {
-   
-// }
+ }

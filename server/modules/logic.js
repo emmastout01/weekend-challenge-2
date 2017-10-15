@@ -1,12 +1,12 @@
 function logic(numberOne, numberTwo, operator) {
     if (operator === 'add') {
-        return numberOne + numberTwo;
+        return Math.round((numberOne + numberTwo)*1000)/1000;
     } else if (operator === 'subtract') {
-        return numberOne - numberTwo;
+        return Math.round((numberOne - numberTwo)*1000)/1000;
     } else if (operator === 'multiply') {
-        return numberOne * numberTwo;
+        return Math.round((numberOne * numberTwo)*1000)/1000;
     } else if (operator === 'divide') {
-        return numberOne / numberTwo;
+        return Math.round((numberOne / numberTwo)*1000)/1000;
     }
 }
 

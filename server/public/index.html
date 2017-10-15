@@ -7,16 +7,17 @@
     <script src="vendors/jquery.js"></script>
     <script src="scripts/client.js"></script>
     <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <title>Weekend Challenge 2</title>
 </head>
 <body>
-    <h1>Let's calculate numbers!</h1>
-    <div class="main">
-       <!-- <input type="number" id="numberOne"> -->
+    <div class="title">
+       <h1>Let's calculate numbers!</h1>
+    </div>
         <div class="calculator">
             <div class="calculator1">
                 <div class="numberInput">
-                    <p id="numberOneInput"> </p>
+                    <p class="numberDisplayed" id="numberOneInput"></p>
                 </div>
                 <div class="numberOneButtons">
                     <button class="numberButtonOne" data-number="1">1</button>
@@ -33,7 +34,7 @@
             </div>
             <div class="buttonDiv">
                 <div class="numberInput">
-                    <p id="operatorInput"></p>
+                    <p class="operatorDisplayed" id="operatorInput"></p>
                 </div>
                 <div class="operators">
                     <button class="operatorButton" data-type="add">+</button>
@@ -44,10 +45,10 @@
             </div>
             <div class="calculator2">
                 <div class="numberInput">
-                    <p id="numberTwoInput"> </p>
+                    <p class="numberDisplayed" id="numberTwoInput"></p>
                 </div>
                 <div class="numberTwoButtons">
-                    <button class="numberButtonTwo" data-number="1">1</button>                        
+                    <button class="numberButtonTwo" data-number="1">1</button>
                     <button class="numberButtonTwo" data-number="2">2</button>
                     <button class="numberButtonTwo" data-number="3">3</buton>
                     <button class="numberButtonTwo" data-number="4">4</button>
@@ -57,24 +58,20 @@
                     <button class="numberButtonTwo" data-number="8">8</button>
                     <button class="numberButtonTwo" data-number="9">9</button>
                     <button class="numberButtonTwo" data-number="0">0</button>
-                 </div>
-             </div>
-             <div >
-                 <button class="equalsButton">=</button>
-             </div>
-             <div>
-                 <p id="result"></p>
-             </div>
-
-    </div>
-    <!--  <input type="number" id="numberTwo"> -->
-        <br>
-        <br>
-        <div>
-            <!-- <button type="button" id="calculateButton">Calculate!</button> 
-            <button id="clearButton">Reset!</button>-->
-            
+                </div>
+            </div>
+            <div>
+                <button class="equalsButton">=</button>
+            </div>
+            <div>
+                <p id="result"></p>
+            </div>
         </div>
-    </div>
+        <div class="clearButtonDiv">
+            <button id="clearButton">Reset!</button>
+        </div>
+        <div class="appendedText">
+            <Past 
+        </div>
 </body>
 </html>
