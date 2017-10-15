@@ -7,8 +7,8 @@ function onReady() {
     $('.operatorButton').on('click', changeType);
     $('.numberButtonOne').on('click', changeNumberOne);
     $('.numberButtonTwo').on('click', changeNumberTwo);
-    $('#equalsButton').on('click', calculateNumbers);
-    $('#clearButton').on('click', resetCalculator)
+    $('.equalsButton').on('click', calculateNumbers);
+    //$('#clearButton').on('click', resetCalculator)
 }
 
 var type = 'testType';
@@ -17,6 +17,7 @@ var numberTwo = 'testNumberTwo'
 
 function changeType() {
     type = $(this).data().type;
+    $('#operatorInput').text($(this).text());
     console.log(type);
 }
 
@@ -37,6 +38,8 @@ function changeNumberTwo() {
 //Click handler for calculate button
 function calculateNumbers() {
     //Create object with numbers/operator entered
+    console.log('in calculateNumbers');
+    console.log('number 1:', numberOne, 'number 2:', numberTwo);
     var calculationVariables = {
         numberOne: numberOne,
         type: type,
@@ -54,11 +57,14 @@ function calculateNumbers() {
     }).fail(function(message) {
         console.log('Error', status)
     });
-}
-
-//Clear button; resets inputs and result to empty
-function resetCalculator() {
+    //Clear fields
     $('#numberOneInput').text('');
+    $('#operatorInput').text('');
     $('#numberTwoInput').text('');
     $('#result').text('');
 }
+
+//Clear button; resets inputs and result to empty
+// function resetCalculator() {
+   
+// }
