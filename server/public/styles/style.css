@@ -73,7 +73,7 @@ h1 {
 .clearButtonDiv {
     background-color: turquoise;
     border-top: 5px solid rgb(144, 55, 232);
-    border-bottom: 5px solid darkblue;
+    border-bottom: 5px solid rgb(144, 55, 232);
     margin: 0px;
     padding: 0px;
 }
@@ -104,4 +104,22 @@ h1 {
 .operatorButton:active {
     background-color:rgba(113, 14, 235, 0.95);
     border: none;
+}
+
+.appendedText {
+    background-color: rgb(242, 114, 116);
+    margin: 0px;
+    padding: 0px;
+    border-top: 5px solid rgb(144, 55, 232);
+    border-bottom: 5px solid darkblue;
+}
+
+#history, h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    margin: 0px;
+}
+
+h2 {
+    margin-bottom: 5px;
 }

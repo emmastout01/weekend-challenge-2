@@ -8,6 +8,8 @@ function logic(numberOne, numberTwo, operator) {
     } else if (operator === 'divide') {
         return Math.round((numberOne / numberTwo)*1000)/1000;
     }
+
+
 }
 
 

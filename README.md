@@ -8,7 +8,7 @@
 - [x] Build server logic to compute numbers
 - [x] Send calculation back to client 
 - [x] Append calculation to DOM
-- [] Build clear button to reset the page
+- [x] Build clear button to reset the page
 
 ##Hard mode, still to do:
 - [x] Find a way to append the text of the buttons clicked to the <p> tag above it
@@ -18,10 +18,8 @@
 - [x] Change the clear button so that the result field is empty
 
 ## Additional styling, still to do:
-- [] Change font family and font size
-- [] Add background color
-- [] Add some more text for clarity?
-- []
+- [x] Change font family and font size
+- [x] Add background color
 
 ## Pro Mode, still to do:
 - [] Append everything to DOM in a list

@@ -10,9 +10,16 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.post('/calculate', function(req,res){
     var numberOne = parseInt(req.body.numberOne);
     var numberTwo = parseInt(req.body.numberTwo);
-    var operator = req.body.type;
-    var result = logic(numberOne, numberTwo, operator);
-    res.send(String(result));
+    var type = req.body.type;
+    var operator = req.body.operator;
+    var result = logic(numberOne, numberTwo, type);
+    var toSend = {
+        numberOne: numberOne,
+        numberTwo: numberTwo,
+        operator: operator,
+        result: result
+    }
+    res.send(toSend);
 })
 
 

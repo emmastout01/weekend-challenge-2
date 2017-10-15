@@ -12,11 +12,13 @@ function onReady() {
 }
 
 var type = 'testType';
+var operator = 'testOperator';
 var numberOne = 'testNumberOne';
-var numberTwo = 'testNumberTwo'
+var numberTwo = 'testNumberTwo';
 
 function changeType() {
     type = $(this).data().type;
+    operator = $(this).text();
     $('#operatorInput').text($(this).text());
     console.log(type);
 }
@@ -43,8 +45,10 @@ function calculateNumbers() {
     var calculationVariables = {
         numberOne: numberOne,
         type: type,
-        numberTwo: numberTwo
+        numberTwo: numberTwo,
+        operator: operator
     }
+    console.log('operator:', operator);
     //POST
     $.ajax({
         method: 'POST',
@@ -53,7 +57,9 @@ function calculateNumbers() {
     //Appends result from server to DOM
     }).done(function(response) {
         console.log('Success!')
-        $('#result').text(response);
+        $('#result').text(response.result);
+        $('#history').append('<td>', response.numberOne, ' ', response.operator, ' ',
+        response.numberTwo, ' = ', response.result, '</td>');
     }).fail(function(message) {
         console.log('Error', status)
     });
