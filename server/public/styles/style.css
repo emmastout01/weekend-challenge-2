@@ -25,7 +25,7 @@
 
 }
 
-.numberButton {
+.numberButtonOne, .numberButtonTwo {
     width: 50px;
     margin: 5px;
     border-radius: 20px;

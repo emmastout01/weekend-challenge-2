@@ -4,27 +4,43 @@ $(document).ready(onReady);
 
 function onReady() {
     console.log('document ready.');
-    $('#addButton').on('click', changeType);
-    $('#subtractButton').on('click', changeType);
-    $('#multiplyButton').on('click', changeType);
-    $('#divideButton').on('click', changeType);
+    $('.operatorButton').on('click', changeType);
+    $('.numberButtonOne').on('click', changeNumberOne);
+    $('.numberButtonTwo').on('click', changeNumberTwo);
     $('#equalsButton').on('click', calculateNumbers);
     $('#clearButton').on('click', resetCalculator)
 }
 
-var type = 'test';
+var type = 'testType';
+var numberOne = 'testNumberOne';
+var numberTwo = 'testNumberTwo'
 
 function changeType() {
     type = $(this).data().type;
+    console.log(type);
+}
+
+function changeNumberOne() {
+    numberOne = parseInt($(this).data().number);
+    $('#numberOneInput').append(numberOne);
+    numberOne = parseInt($('#numberOneInput').text());
+    console.log(numberOne);
+}
+
+function changeNumberTwo() {
+    numberTwo = parseInt($(this).data().number);
+    $('#numberTwoInput').append(numberTwo);
+    numberTwo = parseInt($('#numberTwoInput').text());
+    console.log(numberTwo);
 }
 
 //Click handler for calculate button
 function calculateNumbers() {
     //Create object with numbers/operator entered
     var calculationVariables = {
-        numberOne: $('#numberOne').val(),
+        numberOne: numberOne,
         type: type,
-        numberTwo: $('#numberTwo').val()
+        numberTwo: numberTwo
     }
     //POST
     $.ajax({
@@ -42,8 +58,7 @@ function calculateNumbers() {
 
 //Clear button; resets inputs and result to empty
 function resetCalculator() {
-    $('#numberOne').val('');
-    $('#numberTwo').val('');
-    $('#numberOne').focus();
+    $('#numberOneInput').text('');
+    $('#numberTwoInput').text('');
     $('#result').text('');
 }
