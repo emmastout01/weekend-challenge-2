@@ -1,4 +1,4 @@
-function logic(numberOne, numberTwo, operator) {
+function logic(first, second, typeOfOperator) {
     if (operator === 'add') {
         return Math.round((numberOne + numberTwo)*1000)/1000;
     } else if (operator === 'subtract') {
